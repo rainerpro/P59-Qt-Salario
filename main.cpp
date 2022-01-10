@@ -1,6 +1,6 @@
 #include "salarios.h"
 #include "obrero.h"
-
+#include"controlador.h"
 #include <QApplication>
 #include <QDebug>
 int main(int argc, char *argv[])
@@ -11,6 +11,14 @@ int main(int argc, char *argv[])
 
     //obrero *objObrero1 = new obrero("Juan",47,TipoJornada::Vespertina);
 
+    Controlador *obj= new Controlador();
+
+    obj->agregarObrero("Juan",40, TipoJornada::Matutina);
+    if(obj->calcularSalario()){
+        qDebug() << obj->obrero()->toString();
+            }else{
+                qDebug() << "No se pudo realizar el cálculo de salarios";
+            }
 
     return a.exec();
 }

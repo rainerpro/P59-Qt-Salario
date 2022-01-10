@@ -1,6 +1,6 @@
 #include "obrero.h"
 
-obrero::obrero(QObject *parent) : QObject(parent)
+Obrero::Obrero(QObject *parent) : QObject(parent)
 {
     this->m_nombre ="";
     this->m_horas =0;
@@ -8,67 +8,67 @@ obrero::obrero(QObject *parent) : QObject(parent)
 
 }
 
-const QString &obrero::nombre() const
+const QString &Obrero::nombre() const
 {
     return m_nombre;
 }
 
-void obrero::setNombre(const QString &newNombre)
+void Obrero::setNombre(const QString &newNombre)
 {
     m_nombre = newNombre;
 }
 
-int obrero::horas() const
+int Obrero::horas() const
 {
     return m_horas;
 }
 
-void obrero::setHoras(int newHoras)
+void Obrero::setHoras(int newHoras)
 {
     m_horas = newHoras;
 }
 
-TipoJornada obrero::jornada() const
+TipoJornada Obrero::jornada() const
 {
     return m_jornada;
 }
 
-void obrero::setJornada(TipoJornada newJornada)
+void Obrero::setJornada(TipoJornada newJornada)
 {
     m_jornada = newJornada;
 }
 
-double obrero::salarioBruto() const
+double Obrero::salarioBruto() const
 {
     return m_salarioBruto;
 }
 
-void obrero::setSalarioBruto(double newSalarioBruto)
+void Obrero::setSalarioBruto(double newSalarioBruto)
 {
     m_salarioBruto = newSalarioBruto;
 }
 
-double obrero::salarioNeto() const
+double Obrero::salarioNeto() const
 {
     return m_salarioNeto;
 }
 
-void obrero::setSalarioNeto(double newSalarioNeto)
+void Obrero::setSalarioNeto(double newSalarioNeto)
 {
     m_salarioNeto = newSalarioNeto;
 }
 
-double obrero::descuento() const
+double Obrero::descuento() const
 {
     return m_descuento;
 }
 
-void obrero::setDescuento(double newDescuento)
+void Obrero::setDescuento(double newDescuento)
 {
     m_descuento = newDescuento;
 }
 
-QString obrero::toString()
+QString Obrero::toString()
 {
     QString str = "";
     str.append("Nombre: " + m_nombre + "\n");
@@ -81,7 +81,7 @@ QString obrero::toString()
 }
 
 
-QString obrero::jornada2String()
+QString Obrero::jornada2String()
 {
     switch(m_jornada){
     case TipoJornada::Vespertina:
@@ -98,7 +98,7 @@ QString obrero::jornada2String()
     }
 }
 
-obrero::obrero(const QString &nombre, int horas, TipoJornada jornada) : m_nombre(nombre),
+Obrero::Obrero(const QString &nombre, int horas, TipoJornada jornada) : m_nombre(nombre),
     m_horas(horas),
     m_jornada(jornada)
 {}

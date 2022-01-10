@@ -13,22 +13,25 @@ Salarios::~Salarios()
 {
     delete ui;
 }
+
+
 void Salarios::on_cmdCalcular_clicked()
 {
+    // Obteber datos de la GUI
     QString nombre = ui->intnombre->text();
     int horas = ui->inthora->value();
     TipoJornada jornada;
-    if(ui->intMatutino->isChecked()){
+    if (ui->intMatutino->isChecked()){
         jornada = TipoJornada::Matutina;
-    }else if (ui->intvespertina->isChecked()){
+    } else if (ui->intvespertina->isChecked()){
         jornada = TipoJornada::Vespertina;
-    }else {
+    } else {
         jornada = TipoJornada::Nocturna;
     }
-    // agregar obrero al controlador
-    m_controlador->agregarObrero(nombre,horas,jornada);
-    //calcular
-    if(m_controlador->calcularSalario()){
+    // Agregar obrero al controlador
+    m_controlador->agregarObrero(nombre, horas, jornada);
+    // Calcular
+    if (m_controlador->calcularSalario()){
         ui->outresultado->appendPlainText(m_controlador->obrero()->toString());
     }
 }

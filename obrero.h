@@ -2,6 +2,7 @@
 #define OBRERO_H
 
 #include <QObject>
+
 enum class TipoJornada
 {
     Matutina,
@@ -9,12 +10,12 @@ enum class TipoJornada
     Nocturna
 };
 
-class obrero : public QObject
+class Obrero : public QObject
 {
     Q_OBJECT
 public:
-    explicit obrero(QObject *parent = nullptr);
-    obrero(const QString &nombre, int horas, TipoJornada jornada);
+    explicit Obrero(QObject *parent = nullptr);
+    Obrero(const QString &nombre, int horas, TipoJornada jornada);
 
     const QString &nombre() const;
     void setNombre(const QString &newNombre);
@@ -24,16 +25,18 @@ public:
 
     TipoJornada jornada() const;
     void setJornada(TipoJornada newJornada);
-    double salarioBruto() const;
-        void setSalarioBruto(double newSalarioBruto);
-        double salarioNeto() const;
-        void setSalarioNeto(double newSalarioNeto);
-        double descuento() const;
-        void setDescuento(double newDescuento);
 
-        QString toString();
+    double salarioBruto() const;
+    void setSalarioBruto(double newSalarioBruto);
+    double salarioNeto() const;
+    void setSalarioNeto(double newSalarioNeto);
+    double descuento() const;
+    void setDescuento(double newDescuento);
+
+    QString toString();
 
 signals:
+
 private:
     QString m_nombre;
     int m_horas;
