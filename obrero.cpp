@@ -76,7 +76,11 @@ QString Obrero::toString()
     str.append("Horas: " + QString::number(m_horas) + "\n");
     str.append("Salario Bruto: $" + QString::number(m_salarioBruto) + "\n");
     str.append("Descuento: $" + QString::number(m_descuento) + "\n");
+<<<<<<< HEAD
     str.append("salario Neto: " + QString::number(m_salarioNeto) + "\n");
+=======
+    str.append("salario Neto: $" + QString::number(m_salarioNeto) + "\n");
+>>>>>>> c540aad (version 1.0)
     return str;
 }
 
@@ -98,7 +102,12 @@ QString Obrero::jornada2String()
     }
 }
 
+<<<<<<< HEAD
 Obrero::Obrero(const QString &nombre, int horas, TipoJornada jornada) : m_nombre(nombre),
+=======
+Obrero::Obrero(const QString &nombre, int horas, TipoJornada jornada) :
+    m_nombre(nombre),
+>>>>>>> c540aad (version 1.0)
     m_horas(horas),
     m_jornada(jornada)
 {}

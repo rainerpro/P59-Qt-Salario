@@ -11,14 +11,22 @@ int main(int argc, char *argv[])
 
     //obrero *objObrero1 = new obrero("Juan",47,TipoJornada::Vespertina);
 
+<<<<<<< HEAD
     Controlador *obj= new Controlador();
+=======
+   /* Controlador *obj= new Controlador();
+>>>>>>> c540aad (version 1.0)
 
     obj->agregarObrero("Juan",40, TipoJornada::Matutina);
     if(obj->calcularSalario()){
         qDebug() << obj->obrero()->toString();
             }else{
                 qDebug() << "No se pudo realizar el cálculo de salarios";
+<<<<<<< HEAD
             }
+=======
+            }*/
+>>>>>>> c540aad (version 1.0)
 
     return a.exec();
 }

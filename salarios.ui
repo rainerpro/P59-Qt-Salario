@@ -19,6 +19,13 @@
   <property name="windowTitle">
    <string>Salarios</string>
   </property>
+<<<<<<< HEAD
+=======
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/salary.png</normaloff>:/recursos/salary.png</iconset>
+  </property>
+>>>>>>> c540aad (version 1.0)
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
@@ -208,9 +215,16 @@
    </property>
    <widget class="QMenu" name="menuArchivo">
     <property name="title">
+<<<<<<< HEAD
      <string>Archivo </string>
     </property>
     <addaction name="actionNuevo"/>
+=======
+     <string>&amp;Archivo </string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="separator"/>
+>>>>>>> c540aad (version 1.0)
     <addaction name="actionAbrir"/>
     <addaction name="actionGuardar"/>
     <addaction name="separator"/>
@@ -219,7 +233,11 @@
    </widget>
    <widget class="QMenu" name="menuAyuda">
     <property name="title">
+<<<<<<< HEAD
      <string>Ayuda</string>
+=======
+     <string>Ay&amp;uda</string>
+>>>>>>> c540aad (version 1.0)
     </property>
     <addaction name="actionAceca_de_Salario"/>
    </widget>
@@ -258,6 +276,12 @@
    </property>
   </action>
  </widget>
+<<<<<<< HEAD
  <resources/>
+=======
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+>>>>>>> c540aad (version 1.0)
  <connections/>
 </ui>
