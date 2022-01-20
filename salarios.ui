@@ -63,6 +63,14 @@
         </property>
         <item row="0" column="0">
          <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Nombre :</string>
           </property>
@@ -70,6 +78,13 @@
         </item>
         <item row="0" column="1">
          <widget class="QLineEdit" name="intnombre">
+          <property name="font">
+           <font>
+            <family>Consolas</family>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="placeholderText">
            <string>ingrese el nombre del obrero</string>
           </property>
@@ -77,6 +92,14 @@
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Hora :</string>
           </property>
@@ -84,6 +107,13 @@
         </item>
         <item row="1" column="1">
          <widget class="QSpinBox" name="inthora">
+          <property name="font">
+           <font>
+            <family>Consolas</family>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="maximum">
            <number>50</number>
           </property>
@@ -109,6 +139,13 @@
         </property>
         <item row="0" column="0">
          <widget class="QRadioButton" name="intMatutino">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Matutina</string>
           </property>
@@ -119,6 +156,13 @@
         </item>
         <item row="1" column="0">
          <widget class="QRadioButton" name="intvespertina">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Vespertina</string>
           </property>
@@ -126,6 +170,13 @@
         </item>
         <item row="2" column="0">
          <widget class="QRadioButton" name="intnocturno">
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Nocturno</string>
           </property>
@@ -157,7 +208,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btncalculado">
+         <widget class="QPushButton" name="cmdCalcular">
           <property name="text">
            <string>Calcular</string>
           </property>
@@ -193,6 +244,14 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QPlainTextEdit" name="outresultado">
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -239,7 +298,7 @@
      <string>Ay&amp;uda</string>
 >>>>>>> c540aad (version 1.0)
     </property>
-    <addaction name="actionAceca_de_Salario"/>
+    <addaction name="actionAcerca_de_Salarios"/>
    </widget>
    <addaction name="menuArchivo"/>
    <addaction name="menuAyuda"/>
@@ -247,32 +306,32 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNuevo">
    <property name="text">
-    <string>Nuevo</string>
+    <string>&amp;Nuevo</string>
    </property>
   </action>
   <action name="actionAbrir">
    <property name="text">
-    <string>Abrir</string>
+    <string>&amp;Abrir</string>
    </property>
   </action>
   <action name="actionGuardar">
    <property name="text">
-    <string>Guardar </string>
+    <string>&amp;Guardar </string>
    </property>
   </action>
   <action name="actionCalcular">
    <property name="text">
-    <string>Calcular</string>
+    <string>&amp;Calcular</string>
    </property>
   </action>
   <action name="actionSalir">
    <property name="text">
-    <string>Salir</string>
+    <string>&amp;Salir</string>
    </property>
   </action>
-  <action name="actionAceca_de_Salario">
+  <action name="actionAcerca_de_Salarios">
    <property name="text">
-    <string>Aceca de Salario</string>
+    <string>&amp;Aceca de Salario</string>
    </property>
   </action>
  </widget>
